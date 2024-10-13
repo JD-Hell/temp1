@@ -78,8 +78,8 @@ WSGI_APPLICATION = 'prj.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "dbhost",  # Correctly specify the database name here
-        "USER": "userdb",  # Specify the username for MySQL
+        "NAME": "userdb",  # Correctly specify the database name here
+        "USER": "dbhost",  # Specify the username for MySQL
         "PASSWORD": "amit4492",  # Specify the password for MySQL
         "HOST": "localhost",  # Host where your database is located
         "PORT": "3306",  # Default MySQL port
