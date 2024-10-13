@@ -78,13 +78,14 @@ WSGI_APPLICATION = 'prj.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
+        "NAME": "dbhost",  # Correctly specify the database name here
+        "USER": "userdb",  # Specify the username for MySQL
+        "PASSWORD": "amit4492",  # Specify the password for MySQL
+        "HOST": "localhost",  # Host where your database is located
+        "PORT": "3306",  # Default MySQL port
         "OPTIONS": {
-            'database': 'dbhost',
-            'user': 'userdb',
-            'password': 'amit4492',
-            'default-character-set': 'utf8',
-            'host': 'localhost',
-            'port': '3306'
+            "charset": "utf8mb4",  # Use utf8mb4 for better character support
+            # 'init_command': 'SET NAMES utf8mb4',  # Optional: Set character set on connection
         },
     }
 }
